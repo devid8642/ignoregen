@@ -2,7 +2,7 @@ from unittest.mock import Mock, patch
 
 import pytest
 
-from ignoregen import api_client
+from ignoreme import api_client
 
 
 @patch('httpx.get')

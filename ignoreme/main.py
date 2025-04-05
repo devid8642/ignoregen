@@ -6,7 +6,7 @@ from rich.columns import Columns
 from rich.console import Console
 from rich.panel import Panel
 
-from ignoregen import api_client
+from ignoreme import api_client
 
 app = typer.Typer(
     help='CLI for donotcommit.com – generate .gitignore files easily.'
