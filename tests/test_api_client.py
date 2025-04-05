@@ -9,7 +9,7 @@ from ignoregen import api_client
 def test_list_templates(mock_get):
     mock_response = Mock()
     mock_response.status_code = 200
-    mock_response.text = 'python\nlua\nzig'
+    mock_response.text = 'python,lua,zig'
     mock_get.return_value = mock_response
 
     result = api_client.list_templates()
@@ -26,9 +26,7 @@ def test_get_gitignore_success(mock_get):
 
     content = api_client.get_gitignore(['python'])
     assert '# Python' in content
-    mock_get.assert_called_once_with(
-        'https://donotcommit.com/api/python'
-    )
+    mock_get.assert_called_once_with('https://donotcommit.com/api/python')
 
 
 @patch('httpx.get')
@@ -41,9 +39,7 @@ def test_get_gitignore_multiple_templates(mock_get):
     content = api_client.get_gitignore(['python', 'lua'])
     assert '# Python' in content
     assert '# Lua' in content
-    mock_get.assert_called_once_with(
-        'https://donotcommit.com/api/python,lua'
-    )
+    mock_get.assert_called_once_with('https://donotcommit.com/api/python,lua')
 
 
 def test_get_gitignore_empty_list():

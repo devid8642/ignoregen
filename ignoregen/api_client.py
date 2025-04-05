@@ -9,7 +9,7 @@ def list_templates() -> list[str]:
     """
     response = httpx.get(f'{BASE_URL}/list')
     response.raise_for_status()
-    return response.text.strip().splitlines()
+    return [tpl.strip() for tpl in response.text.split(',') if tpl.strip()]
 
 
 def get_gitignore(templates: list[str]) -> str:
