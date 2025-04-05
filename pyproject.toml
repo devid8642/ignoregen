@@ -1,6 +1,6 @@
 [project]
 name = "ignoreme"
-version = "1.0.2"
+version = "1.0.3"
 authors = [{ name = "Dêvid Teófilo", email = "nnick4673@gmail.com" }]
 description = "A Python client for donotcommit.com"
 readme = "README.md"

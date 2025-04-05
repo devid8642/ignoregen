@@ -1,4 +1,4 @@
-# ignoreme
+![ignoreme logo](static/ignoreme.png)
 
 > 🛡️ A simple CLI to generate `.gitignore` files using [donotcommit.com](https://donotcommit.com)  
 > 🔥 Stop committing files you shouldn't. Ever again.
