@@ -1,6 +1,6 @@
 [project]
 name = "ignoreme"
-version = "1.0.0"
+version = "1.0.1"
 authors = [{ name = "Dêvid Teófilo", email = "nnick4673@gmail.com" }]
 description = "A Python client for donotcommit.com"
 readme = "README.md"
@@ -10,6 +10,13 @@ dependencies = [
     "httpx>=0.28.1",
     "typer>=0.15.2",
 ]
+
+[project.urls]
+Homepage = "https://github.com/devid8642/ignoreme"
+Issues = "https://github.com/devid8642/ignoreme/issues"
+
+[project.scripts]
+ignoreme = "ignoreme.main:app"
 
 [dependency-groups]
 dev = [
