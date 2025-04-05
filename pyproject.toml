@@ -29,6 +29,9 @@ dev = [
 [build-system]
 requires = ["uv", "setuptools"]
 
+[tool.setuptools.packages.find]
+include = ["ignoreme*"]
+
 [tool.ruff]
 line-length = 79
 

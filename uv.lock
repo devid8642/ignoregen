@@ -132,9 +132,9 @@ wheels = [
 ]
 
 [[package]]
-name = "ignoregen"
-version = "0.0.0"
-source = { virtual = "." }
+name = "ignoreme"
+version = "1.0.3"
+source = { editable = "." }
 dependencies = [
     { name = "httpx" },
     { name = "typer" },
